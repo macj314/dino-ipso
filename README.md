@@ -14,6 +14,20 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Navigate to the root directory.
 * Make sure you have npm installed. Then run 'npm install'. And 'npm run build'.
 
+## Specs
+
+**MVP**
+* Create a request to dino-ipsum API, and recieve 1 paragraph.
+* Create a class that handles the storage and sorting of the returned paragraphs.
+* Allow users to make the requests themselves.
+  * Input: {2, 10}
+  * Output: {2 ten word paragraphs}
+
+**Aditional Work**
+* Create an organized, neat UI to present the paragraphs.
+* Allow user to edit and change a specific set of paragraphs.
+* Allow users to add more dino-ipsum to a specific set.
+
 ## Technologies Used
 
 * JavaScript
