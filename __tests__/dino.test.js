@@ -3,8 +3,9 @@ import {Dino} from '../src/dino.js'
 describe('Initial Dino-Ipsum Calls', () => {
   let dino;
   let promise;
-  let request;
+  let response;
   let url;
+  let answer;
 
   beforeEach(() => {
     dino = new Dino();
@@ -12,16 +13,26 @@ describe('Initial Dino-Ipsum Calls', () => {
 
   test('Should get a successful request from dino-ipsum api', () => {
     (async () => {
-      request = await dino.dinoRequestTest();
-      expect(request).toEqual(true);
+      response = await dino.dinoRequestTest();
+      expect(response).toEqual(true);
     })();
   });
 
   test('Should get a request from dino ipsum with the user params of: 2 paragraphs, 10 words.', () => {
     url = 'http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=2&words=10';
     (async () => {
-      request = await dino.dinoRequest(url);
-      expect(request).toEqual(true);
+      response = await dino.dinoRequest(url);
+      expect(getElements(response)).toEqual(true);
     })();
+
+    function getElements(response) {
+      if (response) {
+        answer = true;
+      } else {
+        console.log("Error")
+        answer = false;
+      }
+      return answer;
+    }
   });
 });

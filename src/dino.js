@@ -22,12 +22,10 @@ export class Dino{
     try {
       let response = await fetch(url);
       if (response.ok && response.status == 200) {
-        await console.log(response);
-        response = true;
+        return response;
       } else {
-        response = false;
+        return false;
       }
-      return response;
     } catch(error) {
       return false;
     }
