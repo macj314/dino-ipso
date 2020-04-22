@@ -1,4 +1,4 @@
-import {Dino} from '../src/dino'
+import {Dino} from '../src/dino.js'
 
 describe('Initial Dino-Ipsum Calls', () => {
   let dino;
