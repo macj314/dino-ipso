@@ -21,8 +21,8 @@ export class Dino{
   async dinoRequest(url) {
     try {
       let response = await fetch(url);
-      if (response.ok && response.status == 200) {
-        return response;
+      if (response.ok && response.status == 200) {        
+        return await response;
       } else {
         return false;
       }
