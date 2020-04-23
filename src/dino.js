@@ -4,7 +4,6 @@ export class Dino{
     this.paragraphs = [paragraphs]
   }
 
- 
   async dinoRequestTest() {
     try {
       let response = await fetch('http://dinoipsum.herokuapp.com/api/?format=json');
