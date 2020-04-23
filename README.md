@@ -2,11 +2,12 @@
 
 #### _April 22, 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Jason Macie**_
+#### Contributing API By _**Alex Normand**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This little program is currently just an API request testing platform. The user should be able test simple API calls to the Dino Ipsum API Under src/dino.js, and __tests__/dino.test.js_
 
 ## Setup/Installation Requirements
 
@@ -17,13 +18,13 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 ## Specs
 
 **MVP**
-* Create a request to dino-ipsum API, and recieve 1 paragraph.
-* Create a class that handles the storage and sorting of the returned paragraphs.
-* Allow users to make the requests themselves.
+* Create a successful request to dino-ipsum API.
+* Present requests in a neat format to the console.
   * Input: {2, 10}
   * Output: {2 ten word paragraphs}
 
 **Aditional Work**
+* Create a class that handles the storage and sorting of the returned paragraphs.
 * Create an organized, neat UI to present the paragraphs.
 * Allow user to edit and change a specific set of paragraphs.
 * Allow users to add more dino-ipsum to a specific set.
@@ -38,4 +39,5 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2020 **_{Jason Macie}_**
+Copyright (c) 2013 **_Alex Normand**
+Copyright (c) 2020 **_Jason Macie_**
