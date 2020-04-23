@@ -6,11 +6,14 @@ $(document).ready(function() {
     const city = $('#location').val();
     $('#location').val("");
 
+    console.log("1");
     (async () => {
       let weatherService = new WeatherService();
       const response = await weatherService.getWeatherByCity(city);
       getElements(response);
+      console.log("2");
     })();
+    console.log("3");
 
     function getElements(response) {
       if (response) {

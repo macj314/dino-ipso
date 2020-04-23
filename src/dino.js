@@ -7,37 +7,29 @@ export class Dino{
  
   async dinoRequestTest() {
     try {
-      // console.log("1");
       let response = await fetch('http://dinoipsum.herokuapp.com/api/?format=json');
-      // console.log(response);
       if (response.ok && response.status == 200) {
-        // console.log(response);
         response = await response.json();
-        // console.log("3");
       } else {
-        // console.log("4");
         response = false;
       }
-      // console.log("5");
       return response;
     } catch(err) {
-      // console.log(err.name);
       return false;
     }
   }
 
-  // async dinoRequest() {
-  //   try {
-  //     let response = await fetch('http://dinoipsum.herokuapp.com/api');
-  //     let jsonifiedResponse;
-  //     if (response.ok && response.status == 200) {        
-  //       jsonifiedResponse = await response.json();
-  //     } else {
-  //       jsonifiedResponse = false;
-  //     }
-  //     return jsonifiedResponse
-  //   } catch(error) {
-  //     return false;
-  //   }
-  // }
+  async dinoRequest(url) {
+    try {
+      let response = await fetch(url);
+      if (response.ok && response.status == 200) {
+        response = await response.json();
+      } else {
+        response = false;
+      }
+      return response;
+    } catch(err) {
+      return false;
+    }
+  }
 }
